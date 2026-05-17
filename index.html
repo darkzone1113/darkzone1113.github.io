@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暗区1113 - 个人导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            margin: 0 auto 20px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #a0a0a0;
+            font-size: 1em;
+        }
+
+        .btn-grid {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .nav-btn:hover {
+            background: rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .nav-btn .title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .nav-btn .desc {
+            font-size: 0.85em;
+            color: #a0a0a0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 500px) {
+            .btn-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .nav-btn {
+                padding: 20px 15px;
+            }
+            .nav-btn .icon {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="avatar">👨‍💻</div>
+        <h1>暗区1113</h1>
+        <p>编程初学者 · 正在探索网页开发</p>
+    </div>
+
+    <div class="btn-grid">
+
+        <a href="#about" class="nav-btn">
+            <span class="icon">👤</span>
+            <div class="title">关于我</div>
+            <div class="desc">个人简介和经历</div>
+        </a>
+
+        <a href="#notes" class="nav-btn">
+            <span class="icon">📝</span>
+            <div class="title">学习笔记</div>
+            <div class="desc">记录学习过程</div>
+        </a>
+
+        <a href="#projects" class="nav-btn">
+            <span class="icon">🚀</span>
+            <div class="title">我的项目</div>
+            <div class="desc">展示做过的作品</div>
+        </a>
+
+        <a href="#skills" class="nav-btn">
+            <span class="icon">🛠️</span>
+            <div class="title">技术栈</div>
+            <div class="desc">掌握的技能列表</div>
+        </a>
+
+        <a href="#links" class="nav-btn">
+            <span class="icon">🔗</span>
+            <div class="title">友情链接</div>
+            <div class="desc">收藏的网站推荐</div>
+        </a>
+
+        <a href="https://github.com/darkzone1113" class="nav-btn" target="_blank">
+            <span class="icon">🐙</span>
+            <div class="title">GitHub</div>
+            <div class="desc">访问我的代码仓库</div>
+        </a>
+
+        <a href="#contact" class="nav-btn">
+            <span class="icon">📧</span>
+            <div class="title">联系方式</div>
+            <div class="desc">找到我的方式</div>
+        </a>
+
+        <a href="life.html" class="nav-btn">
+            <span class="icon">📔</span>
+            <div class="title">生活记录</div>
+            <div class="desc">记录日常点滴</div>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        <p> 2026 暗区1113 · 使用 GitHub Pages 部署</p>
+        <p style="margin-top:5px; font-size:0.8em;">点击上方按钮探索更多内容 👆</p>
+    </div>
+
+</body>
+</html>
